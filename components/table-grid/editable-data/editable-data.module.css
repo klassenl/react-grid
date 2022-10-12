@@ -1,0 +1,22 @@
+.input {
+  outline: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: 0;
+  background-color: transparent;
+  appearance: none;
+  caret-color: var(--highlight);
+  width: 150px;
+}
+
+.tooltipTrigger {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 12px;
+  color: var(--highlight);
+  height: 100%;
+  top:0;
+
+}

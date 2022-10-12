@@ -1,0 +1,25 @@
+.cellInner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  height: 30px;
+  transition: 0.3s background-color;
+  position: relative;
+}
+
+.cellEditing {}
+
+.editableCellInner {
+  /* background-color: var(--table);*/
+
+  &:focus-within {
+    background-color: var(--editable-cell-editing);
+  }
+
+  &:not(:focus-within) input,
+  &:not(:focus-within) {
+    cursor: pointer;
+  }
+
+}

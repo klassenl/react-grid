@@ -1,0 +1,50 @@
+.contain {
+  position: relative;
+}
+
+.checkbox {
+  margin: 0;
+  appearance: none;
+  font-family: inherit;
+  color: currentColor;
+  width: 1.1em;
+  height: 1.1em;
+  border: 0.1em solid lightgray;
+  border-radius: 0.15em;
+  display: grid;
+  place-content: center;
+  align-self: center;
+
+  &:focus {
+    outline: var(--outline-style);
+    outline-color: var(--highlight);
+    outline-offset: var(--outline-offset);
+  }
+
+  & + .icons {
+    position: absolute;
+    align-items: center;
+    display: flex;
+    pointer-events: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    .check,
+    .dash {
+      display: none;
+    }
+  }
+
+  &:checked + .icons {
+    .check {
+      display: block;
+    }
+  }
+
+  &:indeterminate + .icons {
+    .dash {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.tableWrap {
+  overflow: auto;
+  width: 100%;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: var(--table);
+}
+
+.table td,
+.table th {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  border: 1px solid white;
+  position: relative;
+}
+
+.table th {
+  text-align: left;
+  font-family: inherit;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.table th,
+.table td {
+  outline: var(--outline-style);
+  outline-offset: var(--outline-offset);
+  outline-color: transparent;
+}
+
+.table th:focus,
+.table td:focus {
+  outline-color: var(--highlight);
+}
